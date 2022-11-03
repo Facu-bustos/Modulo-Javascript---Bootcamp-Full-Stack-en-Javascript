@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Agenda js</title>
+</head>
+
+<body class="flex-container">
+    <div class="container py-2">
+        <h1>Agenda de contactos</h1>
+        <div class="input">
+            <form action="" class="div-inputs" id="form">
+                <input type="number" name="dni" id="input-dni" placeholder="dni" />
+                <input type="text" name="nombre" id="input-nombre" placeholder="nombre" />
+                <input type="text" name="apellido" id="input-apellido" placeholder="apellido" />
+                <input type="number" name="tel" id="input-tel" placeholder="telefono" />
+            </form>
+            <div class="botones">
+                <div class="individual">
+                    <button class="btn btn-primary" id="agregarContacto">
+                        Agregar contacto
+                    </button>
+                </div>
+
+                <div class="individual">
+                    <button class="btn btn-success" id="ordenarAgenda">Ordenar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar por dni" aria-label="Search"
+                id="search" />
+            <button class="btn btn-outline-secondary" id="buscar">Buscar</button>
+            <button class="btn btn-outline-danger" id="limpiar">Limpiar</button>
+        </form>
+    </div>
+    <div class="output">
+        <div id="contenedorContactos"></div>
+    </div>
+    <div class="busqueda">
+        <div id="contenedorBusqueda"></div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
